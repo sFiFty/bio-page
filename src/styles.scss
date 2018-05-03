@@ -2,9 +2,11 @@
 
 $white: #fff;
 $black: #000;
-$header-bg: #f9f9f9;
+$header-bg: #eaeaea;
 $header-text-color: #666666;
 $content-bg: #010101;
+$content-color: #d3d3d3;
+$content-darker-color: #888888;
 
 body {
   margin: 0;
@@ -55,7 +57,7 @@ body {
   .main-content {
     display: flex;
     background-color: $content-bg;
-    color: $white;
+    color: $content-color;
     padding: 40px 30px;
     position: relative;
     .oblique {
@@ -71,10 +73,64 @@ body {
       font-weight: 400;
     }
     .left-col {
-      width: 40%;
+      width: 45%;
+      .skillset-container {
+        ul.skillset-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          .skill {
+            margin-top: 10px;
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+        }
+      }
     }
     .right-col {
-      width: 60%;
+      width: 55%;
+      .companies {
+        .company {
+          border: 1px solid $content-color;
+          display: flex;
+          margin-top: 20px;
+          &:first-child {
+            margin-top: 0px;
+          }
+          .logo {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 40px;
+            }
+          }
+          .decorist img {
+            width: 80px;
+          }
+          .description {
+            width: 75%;
+            font-size: 16px;
+            padding: 20px 30px 20px 0px;
+            .head {
+              .name {
+                color: $white;
+                font-size: 20px;
+                padding-right: 20px;
+              }
+              .period {
+                font-size: 18px;
+              }
+            }
+            .content {
+              padding-top: 10px;
+              color: $content-darker-color;
+            }
+          }
+        }
+      }
     }
   }
 }
