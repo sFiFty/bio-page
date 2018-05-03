@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
+$white: #fff;
+$black: #000;
 $header-bg: #f9f9f9;
-$header-text-color: #010101;
+$header-text-color: #666666;
+$content-bg: #010101;
 
 body {
   margin: 0;
@@ -13,11 +16,17 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   .header {
+    b, h1 {
+      color: $black;
+      margin: 0;
+    }
     background: $header-bg;
     color: $header-text-color;
-    padding: 20px 30px;
+    padding: 20px 30px 60px;
     h1 {
-      margin: 0;
+      padding-bottom: 20px;
+      font-size: 45px;
+      letter-spacing: 1px;
     }
     .header-content {
       display: flex;
@@ -41,6 +50,31 @@ body {
           }
         }
       }
+    }
+  }
+  .main-content {
+    display: flex;
+    background-color: $content-bg;
+    color: $white;
+    padding: 40px 30px;
+    position: relative;
+    .oblique {
+      position: absolute;
+      transform: skewY(-3deg);
+      width: 100%;
+      background: $content-bg;
+      height: 60px;
+      top: -30px;
+      left: 0px;
+    }
+    h2 {
+      font-weight: 400;
+    }
+    .left-col {
+      width: 40%;
+    }
+    .right-col {
+      width: 60%;
     }
   }
 }
