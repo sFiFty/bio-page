@@ -1,0 +1,53 @@
+@import '../../styles/_variables.scss';
+
+h2 .number {
+  color: $white;
+  font-size: 20px;
+}
+
+.companies {
+  .company {
+    border: 1px solid $content-color;
+    display: flex;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0px;
+    }
+    .logo {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo-container {
+        span {
+          display: none;
+        }
+        svg {
+          width: 40px;
+        }
+      }
+    }
+    .decorist .logo-container svg {
+      width: 80px;
+    }
+    .description {
+      width: 75%;
+      font-size: 16px;
+      padding: 20px 30px 20px 0px;
+      .head {
+        .name {
+          color: $white;
+          font-size: 20px;
+          padding-right: 20px;
+        }
+        .period {
+          font-size: 18px;
+        }
+      }
+      .content {
+        padding-top: 10px;
+        color: $content-darker-color;
+      }
+    }
+  }
+}

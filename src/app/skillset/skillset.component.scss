@@ -1,0 +1,22 @@
+@import '../../styles/_variables.scss';
+
+h2 .number {
+  color: $white;
+  font-size: 20px;
+}
+
+.skillset {
+  .skillset-container {
+    ul.skillset-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .skill {
+        margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

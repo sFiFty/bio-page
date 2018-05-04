@@ -1,0 +1,20 @@
+@import '../../styles/_variables.scss';
+
+ul.list {
+  margin: 0;
+  list-style: none;
+  .list-item {
+    display: flex;
+    flex-wrap: nowrap;
+    .name {
+      width: 30%;
+      color: $black;
+    }
+    .value a {
+      color: $header-text-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
