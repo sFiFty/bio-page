@@ -9,6 +9,7 @@ ul.list {
     .name {
       width: 30%;
       color: $black;
+      min-width: 90px;
     }
     .value a {
       color: $header-text-color;

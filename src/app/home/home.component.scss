@@ -28,11 +28,20 @@ body {
       width: auto;
       max-width: 800px;
       .description {
-        width: 50%;
-        padding-right: 100px;
+        width: 60%;
+        padding-right: 80px;
+        .additional-info {
+          padding-top: 10px;
+          .dob, .languages {
+            b { 
+              display: inline-block;
+              width: 100px;
+            }
+          }
+        }
       }
       .contacts {
-        width: 50%;
+        width: 40%;
       }
     }
   }
