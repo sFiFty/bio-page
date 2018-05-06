@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() { }
+  
+  age: number;
 
-  ngOnInit() {}
+  birthday: Date = new Date('11-03-1989');
+
+  ngOnInit() {
+    this.age = this.calculateAge(this.birthday);
+  }
+
+  calculateAge(birthday) {
+    let ageDifMs = Date.now() - birthday.getTime();
+    let ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
 }
