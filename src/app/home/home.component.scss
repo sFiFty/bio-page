@@ -66,9 +66,45 @@ body {
       .info-block:last-child {
         width: 55%;
       }
-      h2 .number {
-        color: $white;
-        font-size: 20px;
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .cv {
+    .header {
+      h1 {
+        text-align: center;
+      }
+      .header-content {
+        flex-direction: column;
+        .description, .contacts {
+          width: 80%;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .description {
+          padding: 0 0px 20px;
+        }
+      }
+    }
+    .main-content {
+      .cv-info {
+        .info-block {
+          margin-top: 30px;
+        }
+        flex-direction: column;
+        .info-block:first-child {
+          width: 100%;
+        }
+        .info-block:last-child {
+          width: 100%;
+        }
+      }
+      .cv-info:first-child{
+        .info-block:first-child {
+          margin-top: 0px;
+        }
       }
     }
   }

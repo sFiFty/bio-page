@@ -18,3 +18,9 @@ ul.list {
     }
   }
 }
+
+@media (max-width:800px) {
+  ul.list {
+    padding-left: 0px;
+  }
+}

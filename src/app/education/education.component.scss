@@ -1,0 +1,19 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/global.scss';
+
+.education {
+  .education-container {
+    .head {
+      font-size: 18px;
+      padding-bottom: 10px;
+      span {
+        color: $white;
+        font-size: 20px;
+        padding-right: 20px;
+      }
+    }
+    .institute, .specialization {
+      color: $content-darker-color;
+    }
+  }
+}
