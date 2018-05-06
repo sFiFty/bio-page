@@ -54,11 +54,22 @@ body {
     h2 {
       font-weight: 400;
     }
-    .left-col {
-      width: 45%;
+    .cv-info-container {
+      display: flex;
+      flex-direction: column;
     }
-    .right-col {
-      width: 55%;
+    .cv-info {
+      display: flex;
+      .info-block:first-child {
+        width: 45%;
+      }
+      .info-block:last-child {
+        width: 55%;
+      }
+      h2 .number {
+        color: $white;
+        font-size: 20px;
+      }
     }
   }
 }

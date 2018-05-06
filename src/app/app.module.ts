@@ -11,6 +11,7 @@ import { DataService } from './data.service';
 import { ContactsComponent } from './contacts/contacts.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { CompaniesComponent } from './companies/companies.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CompaniesComponent } from './companies/companies.component';
     HomeComponent,
     ContactsComponent,
     SkillsetComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
