@@ -6,8 +6,19 @@
     border: 1px solid $content-color;
     display: flex;
     margin-top: 20px;
+    position: relative;
+    padding-right: 20px;
     &:first-child {
       margin-top: 0px;
+    }
+    .more {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .logo {
       width: 25%;
