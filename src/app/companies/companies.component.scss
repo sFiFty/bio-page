@@ -33,6 +33,28 @@
           width: 40px;
         }
       }
+      .name-mobile {
+        display: none;
+      }
+    }
+    a.name {
+      color: $white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 20px;
+      position: relative;
+      .label {
+        position: absolute;
+        top: -12px;
+        right: -15px;
+        color: $white;
+        font-size: 10px;
+        padding: 2px 5px;
+        border-radius: 7px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .decorist .logo-container svg {
       width: 80px;
@@ -42,25 +64,6 @@
       font-size: 16px;
       padding: 20px 30px 20px 0px;
       .head {
-        a.name {
-          color: $white;
-          text-decoration: none;
-          margin-right: 20px;
-          font-size: 20px;
-          position: relative;
-          .label {
-            position: absolute;
-            top: -12px;
-            right: -15px;
-            color: $white;
-            font-size: 10px;
-            padding: 2px 5px;
-            border-radius: 7px;
-          }
-          &:hover {
-            text-decoration: underline;
-          }
-        }
         .period {
           font-size: 18px;
         }
@@ -68,6 +71,33 @@
       .content {
         padding-top: 10px;
         color: $content-darker-color;
+      }
+    }
+  }
+}
+
+@media (max-width:800px) {
+  .companies {
+    .company {
+      flex-direction: column;
+      padding: 20px 20px 0px;
+      .logo, .description {
+        width: 100%;
+      }
+      .logo {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $content-darker-color;
+        padding-bottom: 15px;
+        .name-mobile {
+          display: block;
+          margin-right: 50px;
+        }
+      }
+      .head {
+        .name {
+          display: none;
+        }
       }
     }
   }
