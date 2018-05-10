@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompaniesComponent implements OnInit {
 
+  companyExpanded: boolean =  false;
+
   constructor() { }
+
+  onExpand = () => {
+    console.log(this.companyExpanded);
+    this.companyExpanded = true;
+  }
 
   ngOnInit() {
   }

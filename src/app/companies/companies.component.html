@@ -4,7 +4,7 @@
 </div>
 <div class="companies">
   <div class="company">
-    <div class="more">
+    <div class="more" (click)="onExpand()">
       more...
     </div>
     <div class="main-info">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="additional-info">
+    <div class="additional-info" [ngClass]="{expanded: companyExpanded}">
       <div class="role">
         Web developer, Scrum master at 3Shape
       </div>
