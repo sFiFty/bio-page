@@ -1,8 +1,5 @@
-
-$white: #fff;
-$black: #000;
-$header-bg: #eaeaea;
-$header-text-color: #666666;
-$content-bg: #010101;
-$content-color: #d3d3d3;
-$content-darker-color: #888888;
+$fa-font-path: "./webfonts";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/_core.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/_icons.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
