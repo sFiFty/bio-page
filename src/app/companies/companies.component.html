@@ -467,8 +467,8 @@
           Responsibilities
         </h3>
         <ul>
-          <li>Full Stack developer</li>
-          <li>Team lead</li>
+          <li>Project estimation, deploying/releasing, meetings with customers.</li>
+          <li>Team lead of frontend/backend developers.</li>
         </ul>
       </div>
     </div>
@@ -477,19 +477,56 @@
     </div>
   </div>
   <div class="company">
-    <div class="logo">
-      <div class="name-mobile">
-        <a class="name" href="https://scrum-helper.ninja/" target="_blank">Scrum Helper <span class="label">Pet Project</span></a>
+    <div class="main-info">
+      <div class="logo">
+        <div class="name-mobile">
+          <a class="name" href="https://scrum-helper.ninja/" target="_blank">Scrum Helper <span class="label">Pet Project</span></a>
+        </div>
+      </div>
+      <div class="description">
+        <div class="head">
+          <a class="name" href="https://scrum-helper.ninja/" target="_blank">Scrum Helper<span class="label">Pet Project</span></a>
+          <span class="period">December 2017 - Present</span>
+        </div>
+        <div class="content">
+          3Shape is a tool that helps scrum master to manage his team. Improve your daily meeting with Scrum Helper.
+        </div>
       </div>
     </div>
-    <div class="description">
-      <div class="head">
-        <a class="name" href="https://scrum-helper.ninja/" target="_blank">Scrum Helper<span class="label">Pet Project</span></a>
-        <span class="period">December 2017 - Present</span>
+    <div class="additional-info" [ngClass]="{expanded: companiesExpanded['scrum-helper']}">
+      <ul class="project-info">
+        <li>
+          <b>Role</b> - Full Stack developer
+        </li>
+        <li>
+          <b>Development team</b> - 1 enthusiast
+        </li>
+      </ul>
+      <div class="technologies">
+        <h3>
+          Technologies
+        </h3>
+        <ul>
+          <li>React</li>
+          <li>Redux</li>
+          <li>Webpack</li>
+          <li>SASS</li>
+          <li>Firebase</li>
+          <li>React Native</li>
+        </ul>
       </div>
-      <div class="content">
-        3Shape is a tool that helps scrum master to manage his team. Improve your daily meeting with Scrum Helper.
+      <div class="responsibilities">
+        <h3>
+          Responsibilities
+        </h3>
+        <ul>
+          <li>Developing architecture, deploying/releasing</li>
+          <li>Owner, CEO, Product Owner, Team lead, Project manager, Database administrator, cleaning manager</li>
+        </ul>
       </div>
+    </div>
+    <div class="more" (click)="onExpand('scrum-helper')">
+      {{ companiesExpanded['scrum-helper'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
 </div>
