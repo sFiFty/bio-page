@@ -135,24 +135,36 @@
 @media (max-width:800px) {
   .companies {
     .company {
-      flex-direction: column;
-      padding: 20px 20px 0px;
-      .logo, .description {
-        width: 100%;
-      }
-      .logo {
-        display: flex;
-        justify-content: flex-start;
-        border-bottom: 1px solid $content-darker-color;
-        padding-bottom: 15px;
-        .name-mobile {
-          display: block;
-          margin-right: 50px;
+      .main-info {
+        padding: 20px 30px 0px;
+        flex-direction: column;
+        .logo, .description {
+          width: 100%;
+        }
+        .logo {
+          display: flex;
+          justify-content: flex-start;
+          border-bottom: 1px solid $content-darker-color;
+          padding-bottom: 15px;
+          .name-mobile {
+            display: block;
+            margin-right: 50px;
+          }
+        }
+        .head {
+          .name {
+            display: none;
+          }
         }
       }
-      .head {
-        .name {
-          display: none;
+      .additional-info.expanded {
+        h3 {
+          margin-bottom: 0px;
+          border-bottom: none;
+          padding-bottom: 0px;
+        }
+        .responsibilities ul {
+          margin-top: 5px;
         }
       }
     }
