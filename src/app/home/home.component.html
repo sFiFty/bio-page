@@ -1,8 +1,8 @@
-<div class="cv">
+<div class="cv" [ngClass]="{'print': print}">
   <div class="header">
     <div class="top">
       <h1>Hello</h1>
-      <div class="print">
+      <div class="print" (click)="onAddPrintStyles()">
         <i class="fas fa-print"></i>
       </div>
     </div>

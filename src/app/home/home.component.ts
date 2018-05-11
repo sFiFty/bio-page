@@ -7,13 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() { }
-  
   age: number;
+  print: boolean;
 
   birthday: Date = new Date('11-03-1989');
 
   ngOnInit() {
     this.age = this.calculateAge(this.birthday);
+    this.print = false;
+  }
+
+  onAddPrintStyles() {
+    this.print = true;
   }
 
   calculateAge(birthday) {
