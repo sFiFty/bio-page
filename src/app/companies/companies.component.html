@@ -84,6 +84,13 @@
       </div>
     </div>
     <div class="more" (click)="onExpand('3shape')">
+      <i
+        [ngClass]="{
+          'fa-chevron-down': !companiesExpanded['3shape'],
+          'fa-chevron-up': companiesExpanded['3shape']
+        }"
+        class="fas"
+      ></i>
       {{ companiesExpanded['3shape'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
@@ -164,6 +171,13 @@
       </div>
     </div>
     <div class="more" (click)="onExpand('decorist')">
+      <i
+        [ngClass]="{
+          'fa-chevron-down': !companiesExpanded['decorist'],
+          'fa-chevron-up': companiesExpanded['decorist']
+        }"
+        class="fas"
+      ></i>
       {{ companiesExpanded['decorist'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
@@ -472,6 +486,13 @@
       </div>
     </div>
     <div class="more" (click)="onExpand('codemotion')">
+      <i
+        [ngClass]="{
+          'fa-chevron-down': !companiesExpanded['codemotion'],
+          'fa-chevron-up': companiesExpanded['codemotion']
+        }"
+        class="fas"
+      ></i>
       {{ companiesExpanded['codemotion'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
@@ -525,6 +546,13 @@
       </div>
     </div>
     <div class="more" (click)="onExpand('scrum-helper')">
+      <i
+        [ngClass]="{
+          'fa-chevron-down': !companiesExpanded['scrum-helper'],
+          'fa-chevron-up': companiesExpanded['scrum-helper']
+        }"
+        class="fas"
+      ></i>
       {{ companiesExpanded['scrum-helper'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
