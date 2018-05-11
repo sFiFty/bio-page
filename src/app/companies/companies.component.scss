@@ -7,15 +7,19 @@
     display: flex;
     margin-top: 20px;
     position: relative;
-    padding-right: 20px;
     flex-direction: column;
     &:first-child {
       margin-top: 0px;
     }
     .more {
-      position: absolute;
-      top: 5px;
-      right: 15px;
+      width: 95%;
+      text-transform: uppercase;
+      text-align: center;
+      border-top: 1px solid $content-darker-color;
+      padding: 2px 0px;
+      margin: 0 auto;
+      font-size: 10px;
+      letter-spacing: 7px;
       cursor: pointer;
       &:hover {
         text-decoration: underline;

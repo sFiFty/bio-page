@@ -4,9 +4,6 @@
 </div>
 <div class="companies">
   <div class="company">
-    <div class="more" (click)="onExpand('3shape')">
-      {{ companiesExpanded['3shape'] ? 'less...' : 'more...' }}
-    </div>
     <div class="main-info">
       <div class="logo">
         <div class="name-mobile">
@@ -86,11 +83,11 @@
         </ul>
       </div>
     </div>
+    <div class="more" (click)="onExpand('3shape')">
+      {{ companiesExpanded['3shape'] ? 'Collapse' : 'Expand' }}
+    </div>
   </div>
   <div class="company">
-    <div class="more" (click)="onExpand('decorist')">
-      {{ companiesExpanded['decorist'] ? 'less...' : 'more...' }}
-    </div>
     <div class="main-info">
       <div class="logo decorist">
         <div class="name-mobile">
@@ -167,12 +164,12 @@
         </ul>
       </div>
     </div>
+    <div class="more" (click)="onExpand('decorist')">
+      {{ companiesExpanded['decorist'] ? 'Collapse' : 'Expand' }}
+    </div>
   </div>
   <div class="company">
     <div class="main-info">
-      <div class="more" (click)="onExpand('codemotion')">
-        {{ companiesExpanded['codemotion'] ? 'less...' : 'more...' }}
-      </div>
       <div class="logo">
         <div class="name-mobile">
           <a class="name" href="https://codemotion.ninja/" target="_blank">Codemotion</a>
@@ -474,6 +471,9 @@
           <li>Team lead</li>
         </ul>
       </div>
+    </div>
+    <div class="more" (click)="onExpand('codemotion')">
+      {{ companiesExpanded['codemotion'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
   <div class="company">
