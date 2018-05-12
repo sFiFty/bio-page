@@ -95,10 +95,22 @@ body {
   }
 }
 
-.print.cv .header {
-  background-color: $white;
-  color: $black;
+.print.cv {
+  .header, .main-content {
+    background-color: $white;
+    color: $black;
+  }
+  .header {
+    padding-bottom: 20px;
+  }
+  .main-content {
+    padding-top: 0px;
+    .oblique {
+      display: none;
+    }
+  }
 }
+
 
 @media (max-width:800px) {
   .cv {
