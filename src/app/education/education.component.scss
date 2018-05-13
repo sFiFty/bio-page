@@ -18,3 +18,14 @@
     }
   }
 }
+
+@media print {
+  .education .education-container {
+    .institute, .specialization {
+      color: $black;
+    }
+    .head span {
+      color: $black;
+    }
+  }
+}

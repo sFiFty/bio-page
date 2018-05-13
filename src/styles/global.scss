@@ -12,3 +12,12 @@ h2 {
   font-size: 13px;
   padding: 0px 35px 30px;
 }
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  h2 .number {
+    color: $black
+  }
+}

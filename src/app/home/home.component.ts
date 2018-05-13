@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timeout } from 'q';
 
 @Component({
   selector: 'app-home',
@@ -8,17 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   constructor() { }
   age: number;
-  print: boolean;
 
   birthday: Date = new Date('11-03-1989');
 
   ngOnInit() {
     this.age = this.calculateAge(this.birthday);
-    this.print = false;
   }
 
   onAddPrintStyles() {
-    this.print = true;
+    setTimeout(() => {
+      print()
+    }, 0)
   }
 
   calculateAge(birthday) {

@@ -132,6 +132,33 @@
   }
 }
 
+@media print {
+  .companies {
+    .company {
+      .additional-info {
+        max-height: 600px;
+      }
+      .more {
+        display: none;
+      }
+      .main-info {
+        .logo {
+          display: none;
+        }
+        a.name {
+          color: $black;
+        }
+        .description {
+          padding-left: 30px;
+          .content {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:800px) {
   .companies {
     .company {
