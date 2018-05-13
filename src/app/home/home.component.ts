@@ -16,11 +16,10 @@ export class HomeComponent implements OnInit {
     this.age = this.calculateAge(this.birthday);
   }
 
-  onAddPrintStyles() {
-    setTimeout(() => {
-      print()
-    }, 0)
+  onPrint() {
+    print()
   }
+  
 
   calculateAge(birthday) {
     let ageDifMs = Date.now() - birthday.getTime();
