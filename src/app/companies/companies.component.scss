@@ -135,14 +135,16 @@
 }
 
 @media print {
-  .print-margin {
-    height: 150px;
+  .print-margin, .codemotion-margin {
+    height: 350px;
     opacity: 0;
   }
+  .codemotion-margin {
+    height: 80px;
+  }
   .companies {
-
     .company {
-      margin-top: 100px;
+      margin-top: 20px;
       .additional-info {
         max-height: 600px;
         opacity: 1;
