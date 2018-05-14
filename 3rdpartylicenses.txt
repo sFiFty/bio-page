@@ -130,6 +130,10 @@ MIT
 MIT
 MIT
 
+@types/q@0.0.32
+MIT
+MIT
+
 @angular/router@5.2.9
 MIT
 MIT
