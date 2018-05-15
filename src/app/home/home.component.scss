@@ -81,15 +81,19 @@ body {
     }
     .cv-info-container {
       display: flex;
-      flex-direction: column;
-    }
-    .cv-info {
-      display: flex;
-      .info-block:first-child {
+      flex-direction: row;
+      .cv-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .cv-column:first-child {
         width: 40%;
       }
-      .info-block:last-child {
+      .cv-column:last-child {
         width: 60%;
+      }
+      .companies-block {
+        margin-top: 20px;
       }
     }
   }
@@ -97,12 +101,14 @@ body {
 
 @media print {
   .cv {
+    margin: 10px 20px;
     .header, .main-content {
       background-color: $white;
       color: $black;
     }
     .header {
       padding-bottom: 20px;
+      border-bottom: 2px solid $black;
     }
     .main-content {
       padding-top: 0px;
@@ -136,21 +142,14 @@ body {
       }
     }
     .main-content {
-      .cv-info {
-        .info-block {
-          margin-top: 30px;
-        }
+      .cv-info-container {
         flex-direction: column;
-        .info-block:first-child {
+        .cv-column:first-child, .cv-column:last-child {
           width: 100%;
         }
-        .info-block:last-child {
-          width: 100%;
-        }
-      }
-      .cv-info:first-child{
-        .info-block:first-child {
-          margin-top: 0px;
+
+        .cv-column:last-child {
+          margin-top: 20px;
         }
       }
     }
