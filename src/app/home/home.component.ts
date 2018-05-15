@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { timeout } from 'q';
+import { format, getTime, getYear } from 'date-fns';
 
 @Component({
   selector: 'app-home',
@@ -18,13 +18,15 @@ export class HomeComponent implements OnInit {
   }
 
   onPrint() {
-    print()
+    print();
   }
 
 
   calculateAge(birthday) {
-    let ageDifMs = Date.now() - birthday.getTime();
-    let ageDate = new Date(ageDifMs);
-    return Math.abs(ageDate.getUTCFullYear() - 1970);
+    let currentTime = getTime(Date.now());
+    let birthdayTime = getTime(birthday);
+    let ageDifMs = currentTime - birthdayTime;
+    let ageDate = format(ageDifMs);
+    return Math.abs(getYear(format(ageDate)) - 1970);
   }
 }
