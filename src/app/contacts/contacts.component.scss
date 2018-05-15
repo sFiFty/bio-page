@@ -11,10 +11,13 @@ ul.list {
       color: $black;
       min-width: 90px;
     }
-    .value a {
-      color: $header-text-color;
-      &:hover {
-        text-decoration: none;
+    .value {
+      white-space: nowrap;
+      a {
+        color: $header-text-color;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
