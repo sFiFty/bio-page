@@ -27,6 +27,6 @@ export class HomeComponent implements OnInit {
     let birthdayTime = getTime(birthday);
     let ageDifMs = currentTime - birthdayTime;
     let ageDate = format(ageDifMs);
-    return Math.abs(getYear(format(ageDate)) - 1970);
+    return Math.abs(getYear(format(ageDate)) - 1970) || 28;
   }
 }
