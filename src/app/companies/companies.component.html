@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="additional-info" [ngClass]="{expanded: companiesExpanded['3shape']}">
+    <div class="additional-info">
       <ul class="project-info">
         <li>
           <b>Role</b> - Web developer, Scrum master.
@@ -83,16 +83,6 @@
           <li>Conducting scrum meetings (grooming, estimations, daily, retrospectives etc.)</li>
         </ul>
       </div>
-    </div>
-    <div class="more" (click)="onExpand('3shape')">
-      <i
-        [ngClass]="{
-          'fa-chevron-down': !companiesExpanded['3shape'],
-          'fa-chevron-up': companiesExpanded['3shape']
-        }"
-        class="fas"
-      ></i>
-      {{ companiesExpanded['3shape'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
   <div class="company">
@@ -137,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="additional-info" [ngClass]="{expanded: companiesExpanded['decorist']}">
+    <div class="additional-info">
       <ul class="project-info">
         <li>
           <b>Role</b> - Web developer.
@@ -170,16 +160,6 @@
           <li>Team lead of frontend developers.</li>
         </ul>
       </div>
-    </div>
-    <div class="more" (click)="onExpand('decorist')">
-      <i
-        [ngClass]="{
-          'fa-chevron-down': !companiesExpanded['decorist'],
-          'fa-chevron-up': companiesExpanded['decorist']
-        }"
-        class="fas"
-      ></i>
-      {{ companiesExpanded['decorist'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
   <div class="print-margin codemotion-margin"></div>
@@ -455,7 +435,7 @@
         </div>
       </div>
     </div>
-    <div class="additional-info" [ngClass]="{expanded: companiesExpanded['codemotion']}">
+    <div class="additional-info">
       <ul class="project-info">
         <li>
           <b>Role</b> - Team Lead, Full Stack developer.
@@ -487,16 +467,6 @@
         </ul>
       </div>
     </div>
-    <div class="more" (click)="onExpand('codemotion')">
-      <i
-        [ngClass]="{
-          'fa-chevron-down': !companiesExpanded['codemotion'],
-          'fa-chevron-up': companiesExpanded['codemotion']
-        }"
-        class="fas"
-      ></i>
-      {{ companiesExpanded['codemotion'] ? 'Collapse' : 'Expand' }}
-    </div>
   </div>
   <div class="company">
     <div class="main-info">
@@ -515,7 +485,7 @@
         </div>
       </div>
     </div>
-    <div class="additional-info" [ngClass]="{expanded: companiesExpanded['scrum-helper']}">
+    <div class="additional-info">
       <ul class="project-info">
         <li>
           <b>Role</b> - Full Stack developer.
@@ -546,16 +516,6 @@
           <li>Owner, CEO, Product Owner, Team lead, Project manager, Database administrator, designer, cleaning manager.</li>
         </ul>
       </div>
-    </div>
-    <div class="more" (click)="onExpand('scrum-helper')">
-      <i
-        [ngClass]="{
-          'fa-chevron-down': !companiesExpanded['scrum-helper'],
-          'fa-chevron-up': companiesExpanded['scrum-helper']
-        }"
-        class="fas"
-      ></i>
-      {{ companiesExpanded['scrum-helper'] ? 'Collapse' : 'Expand' }}
     </div>
   </div>
 </div>
